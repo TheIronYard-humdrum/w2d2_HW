@@ -1,0 +1,50 @@
+* {
+  border: solid #88D393 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1  {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.calculator {
+  width: 202px;
+  height: 250px;
+  margin: 0 auto 40px;
+}
+
+.one-fourth,
+.three-fourths {
+  background-color: #33BC58;
+  color: white;
+}
+
+.one-fourth {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.last {
+  background-color: #66C979;
+  color: black;
+}
+
+.three-fourths {
+  height: 50px;
+  width: 150px;
+  float: left;
+}
+
+p {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  padding-top: 16px;
+  border: none;
+}
