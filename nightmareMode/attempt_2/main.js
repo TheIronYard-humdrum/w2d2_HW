@@ -1,10 +1,11 @@
 number = ''
 console.log("Hello")
 
+
 var totaled = false
 
 var string = function(e) {
-  
+
   if (totaled == true) {
     clear(e)
     totaled = false
@@ -25,7 +26,6 @@ var equate = function(e) {
   document.querySelector(".input").innerHTML = total
   totaled = true
 }
-
 
 var input = document.querySelectorAll(".number")
 
