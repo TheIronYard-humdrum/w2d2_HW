@@ -10,8 +10,18 @@ var string = function(e) {
     clear(e)
     totaled = false
   } else {
-    number+= e.target.innerHTML
-    document.querySelector(".input").innerHTML = number
+      if (e.target.innerHTML == "x") {
+        number += "*"
+        document.querySelector(".input").innerHTML = number
+      } 
+      else if (e.target.innerHTML == "/") {
+        number += "\xF7"
+        document.querySelector(".input").innerHTML = number
+      }
+      else {
+        number+= e.target.innerHTML
+        document.querySelector(".input").innerHTML = number
+    }
   }
 }
 
@@ -21,7 +31,7 @@ var clear = function(e) {
 }
 
 var equate = function(e) {
-  number = number.replace("x", "*")
+  number = number.replace("\xF7", "/")
   total = eval(number)
   document.querySelector(".input").innerHTML = total
   totaled = true
